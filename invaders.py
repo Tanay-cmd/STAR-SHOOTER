@@ -22,7 +22,7 @@ class alien(pygame.sprite.Sprite):
         
         
     def update(self, direction):
-        self.rect.x += direction*self.speed
+        self.rect.x += direction
         
 
        
@@ -30,3 +30,4 @@ class alien(pygame.sprite.Sprite):
 
 
 
+    
