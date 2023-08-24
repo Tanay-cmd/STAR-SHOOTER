@@ -29,7 +29,7 @@ class Player(pygame.sprite.Sprite):
     def shoot(self):
         self.laser_group.add(self.create_bullet())
     def create_bullet(self):
-        return Laser(self.rect.midtop[0], self.rect.midtop[1], 5, 272*3 + 30)
+        return Laser(self.rect.midtop[0], self.rect.midtop[1], 5, 272*3 + 30, 1)
     def reload(self):
         if not self.ready:
             self.current_time = pygame.time.get_ticks()
