@@ -161,15 +161,15 @@ async def main():
                 random_sprite = choice(sprites)
                 selected_alien = random_sprite
                 if (selected_alien.color == 'red'):
-                    alien_laser = Laser(random_sprite.rect.midbottom[0], random_sprite.rect.midbottom[1], -5, screen_height)
+                    alien_laser = Laser(random_sprite.rect.midbottom[0], random_sprite.rect.midbottom[1], -5, screen_height,2)
                     self.alien_lasers.add(alien_laser)
 
                 if (selected_alien.color == 'yellow'):
-                    alien_laser = Laser(random_sprite.rect.midbottom[0], random_sprite.rect.midbottom[1], -8, screen_height)
+                    alien_laser = Laser(random_sprite.rect.midbottom[0], random_sprite.rect.midbottom[1], -8, screen_height,3)
                     self.alien_lasers.add(alien_laser)
 
                 if (selected_alien.color == 'green'):
-                    alien_laser = Laser(random_sprite.rect.midbottom[0], random_sprite.rect.midbottom[1], -10, screen_height)
+                    alien_laser = Laser(random_sprite.rect.midbottom[0], random_sprite.rect.midbottom[1], -10, screen_height,4)
                     self.alien_lasers.add(alien_laser)
 
         def state_manager(self):
